@@ -248,7 +248,7 @@ class: middle, black-slide
 
 À l'échelle de la Terre (pour une résolution de 0.25°), .bold[une trajectoire $x\_{1:L}$ contient des milliards de variables].
 
-Notre approche (en cours): Un video diffusion model produisant des trajectoires $z\_{1:L}$ dans un espace latent et décodées dans l'espace original.
+Notre approche (en cours): Un .bold[video diffusion model] produisant des trajectoires $z\_{1:L}$ .bold[dans un espace latent] et décodées vers l'espace original.
 
 ---
 
@@ -266,20 +266,21 @@ class: middle, center, black-slide
 
 class: middle
 
-.center[
-
-Merci à l'équipe: Gérome, François, Victor, Omer, Sacha, Matthias et Elise!
-
-.width-20.circle[![](figures/faces/gerome.jpg)] .width-20.circle[![](figures/faces/frozet.jpg)] .width-20.circle[![](figures/faces/victor.jpg)]<br> .width-20.circle[![](figures/faces/omer.jpg)] .width-20.circle[![](figures/faces/sacha.jpg)] .width-20.circle[![](figures/faces/mathias.jpg)]  .width-20.circle[![](figures/faces/elise.jpg)]
-
-]
+.center.width-10[![](figures/icons/globe-terrestre.png)]
 
 ## Conclusions
 
 - Les modèles de diffusion sont plus que des générateurs d'images.
 - Ils sont un nouvel outil pour traiter des problèmes inverses de haute dimension en science.
 
+---
 
+class: middle
 
+.center[
 
+Un travail d'équipe: Merci à Gérome, François, Victor,<br> Omer, Sacha, Matthias et Elise!
 
+.width-20.circle[![](figures/faces/gerome.jpg)] .width-20.circle[![](figures/faces/frozet.jpg)] .width-20.circle[![](figures/faces/victor.jpg)] .width-20.circle[![](figures/faces/omer.jpg)] .width-20.circle[![](figures/faces/sacha.jpg)] .width-20.circle[![](figures/faces/mathias.jpg)] .width-20.circle[![](figures/faces/elise.jpg)]
+
+]
