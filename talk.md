@@ -79,7 +79,7 @@ class: middle
 
 .center.width-100[![](figures/sd35-prompts.jpg)]
 
-.center[Text-to-image generation ($x$ = image, $y$ = texte)]
+.center[Text-to-image generation<br> ($x$ = image, $y$ = texte)]
 
 .footnote[Source: [stability.ai](https://stability.ai/stable-image), 2024.]
 
@@ -95,7 +95,7 @@ class: middle
 
 ]
 
-.center[Image-to-image generation ($x$ = image, $y$ = image)]
+.center[Image-to-image generation<br> ($x$ = image haute résolution, $y$ = image basse résolution)]
 
 .footnote[Credits: [Saharia et al](https://arxiv.org/abs/2104.07636), 2021.]
 
@@ -109,7 +109,7 @@ class: middle
     </video>
 ]
 
-.center[Text-to-video generation ($x$ = video, $y$ = texte)]
+.center[Text-to-video generation<br> ($x$ = vidéo, $y$ = texte)]
 
 .footnote[Source: [OpenAI](https://openai.com/sora/), 2024.]
 
@@ -162,6 +162,12 @@ class: middle
 
 .center.width-80[![](figures/WeatherModel.png)]
 
+.center[
+
+$x$ = état météorologique
+
+]
+
 ---
 
 class: middle
@@ -171,8 +177,7 @@ class: middle
 
 <br><br><br><br><br><br>
 
-.bold[Gencast] (Google Deepmind) est un modèle de diffusion pour la prévision météorologique de type image-to-image.
-
+.bold[Gencast] (Google Deepmind) est un modèle de diffusion de type image-to-image pour la prévision météorologique du prochain état $x\_{t+1}$ à partir de l'état actuel $x\_t$.
 ]
 .kol-1-2[
 .center.width-100[![](figures/gencast.jpg)]
@@ -234,7 +239,8 @@ class: middle
 
 .center.width-75[![](figures/ok.png)]
 
-.center[SDA peut assimiler des observations météorologiques bruitées<br> pour produire des ensembles stochastiques.]
+.center[SDA peut assimiler des observations météorologiques bruitées.<br>
+$x$ = état météorologique régional, $y$ = observations ponctuelles]
 
 .footnote[Credits: [Manshausen et al](https://arxiv.org/abs/2406.16947), 2024.]
 
@@ -246,9 +252,22 @@ class: middle, black-slide
 
 .center.width-40[![](figures/earth.jpg)]
 
-À l'échelle de la Terre (pour une résolution de 0.25°), .bold[une trajectoire $x\_{1:L}$ contient des milliards de variables].
+À l'échelle de la Terre (pour une résolution de 0.25°), .bold[une trajectoire $x\_{1:L}$ contient trop de variables].
+- $1440 \times 720 \times 6 \times 37 \times 24 \times 14 = 77 \times 10^9$ variables pour 14 jours.
+- Un modèle de diffusion pour la Terre nécessiterait .bold[des ressources colossales].
 
-Notre approche (en cours): Un .bold[video diffusion model] produisant des trajectoires $z\_{1:L}$ .bold[dans un espace latent] et décodées vers l'espace original.
+---
+
+class: middle
+
+.avatars[![](figures/faces/gerome.jpg)![](figures/faces/frozet.jpg)![](figures/faces/victor.jpg)![](figures/faces/omer.jpg)![](figures/faces/sacha.jpg)![](figures/faces/mathias.jpg)![](figures/faces/elise.jpg)![](figures/faces/gilles.jpg)]
+
+<br>
+.center.width-50[![](figures/dit.png)]
+
+Notre approche (en cours): 
+- Un .bold[autoencoder] pour encoder et décoder des trajectoires $x\_{1:L}$ vers un espace latent de dimension réduite.
+- Un .bold[video diffusion model] (basé sur une variante spatiotemporelle du DiT) produisant des trajectoires $z_{1:L}$ .bold[dans cet espace latent]
 
 ---
 
@@ -270,8 +289,8 @@ class: middle
 
 ## Conclusions
 
-- Les modèles de diffusion sont plus que des générateurs d'images.
-- Ils sont un nouvel outil pour traiter des problèmes inverses de haute dimension en science.
+- Les modèles de diffusion sont pas que des générateurs d'images.
+- Ils sont un outil pour traiter des problèmes inverses de haute dimension en science.
 
 ---
 
