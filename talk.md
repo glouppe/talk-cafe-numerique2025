@@ -263,11 +263,17 @@ class: middle
 .avatars[![](figures/faces/gerome.jpg)![](figures/faces/frozet.jpg)![](figures/faces/victor.jpg)![](figures/faces/omer.jpg)![](figures/faces/sacha.jpg)![](figures/faces/mathias.jpg)![](figures/faces/elise.jpg)![](figures/faces/gilles.jpg)]
 
 <br>
-.center.width-50[![](figures/dit.png)]
-
+.grid[
+.kol-1-2[<br><br><br>
+.center.width-100[![](figures/ae.png)]
+]
+.kol-1-2[
+.center.width-100[![](figures/dit.png)]
+]
+]
 Notre approche (en cours): 
 - Un .bold[autoencoder] pour encoder et décoder des trajectoires $x\_{1:L}$ vers un espace latent de dimension réduite.
-- Un .bold[video diffusion model] (basé sur une variante spatiotemporelle du DiT) produisant des trajectoires $z_{1:L}$ .bold[dans cet espace latent]
+- Un .bold[video diffusion model] (basé sur une variante spatiotemporelle du DiT) produisant des trajectoires $z_{1:L}$ latentes.
 
 ---
 
@@ -296,10 +302,13 @@ class: middle
 
 class: middle
 
-.center[
+.center.width-10[![](figures/icons/high-five.png)]
 
-Un travail d'équipe: Merci à Gérome, François, Victor,<br> Omer, Sacha, Matthias et Elise!
+.center[
 
 .width-20.circle[![](figures/faces/gerome.jpg)] .width-20.circle[![](figures/faces/frozet.jpg)] .width-20.circle[![](figures/faces/victor.jpg)] .width-20.circle[![](figures/faces/omer.jpg)] .width-20.circle[![](figures/faces/sacha.jpg)] .width-20.circle[![](figures/faces/mathias.jpg)] .width-20.circle[![](figures/faces/elise.jpg)]
 
+(Gérome, François, Victor, Omer, Sacha, Matthias, Elise)
+
 ]
+
