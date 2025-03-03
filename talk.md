@@ -37,7 +37,7 @@ class: middle
 .center[
 .width-100[![](figures/perturb_vp.gif)]
 
-Un .bold[modèle de diffusion] est un processus stochastique $x\_t$ qui détériore progressivement un signal $x$ en lui ajoutant du bruit.
+Un .bold[processus de diffusion] est un processus stochastique $x\_t$ qui détériore progressivement un signal $x$ en lui ajoutant du bruit.
 
 ]
 
@@ -120,13 +120,21 @@ background-size: contain
 
 .center[L'IA générative, un réel progrès?]
 
+???
+
+On pourrait se demander, mais bon sang, à quoi bon générer de jolies images ou vidéos? Est-ce vraiment utile?
+
+Les applications de cette technologie sont déjà bien nombreuses dans les domaines de l'audiovisuel, comme le cinéma, la télévision, la musique, la photographie, le design, le jeu vidéo, la publicité, etc, où des artistes, des acteurs, des musiciens, des écrivains, ou des réalisateurs sont, dans le meilleur des cas, assistés, et dans le pire des cas, remplacés par ces modèles.
+
+Cela suscite immédiatement de nombreuses questions sociétales, éthiques, et économiques, qui sont loin d'être résolues, mais on peut en tout cas légitimement se demander si ces technologies constituent vraiment un réel progrès. 
+
 ---
 
 class: middle
 
 .center.width-10[![](figures/icons/science.png)]
 
-.center[L'IA est capable de résoudre des problèmes mathématiques<br> que personne ne peut résoudre.]
+.center[L'IA est capable de résoudre des problèmes scientifiques<br> que personne ne peut résoudre.]
 
 ---
 
@@ -264,10 +272,10 @@ class: middle
 
 <br>
 .grid[
-.kol-1-2[<br><br><br>
+.kol-3-5[<br><br>
 .center.width-100[![](figures/ae.png)]
 ]
-.kol-1-2[
+.kol-2-5[
 .center.width-100[![](figures/dit.png)]
 ]
 ]
